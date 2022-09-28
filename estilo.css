@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Arimo', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    background-image: url(./Imagens/parede-de-tijolo-preto-fundo-escuro-para-design.jpg);
+    border: 4px solid #82C2FF;
+    padding: 34px 0;
+}
+
+header nav ul{
+    display: flex;
+    gap: 43px;
+    justify-content: center;
+}
+
+.bg{
+    background-image: url(./Imagens/pexels-magda-ehlers.jpg);
+    background-size: cover;
+    padding: 0 80px;
+    border: 4px solid #82C2FF;
+}
+
+main h1{
+    font-family: 'Jim Nightshade', cursive;
+    font-weight: 400;
+    color: #82C2FF;
+    font-size: 72px;
+    text-align: center;
+}
+
+main div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 34px;
+}
+
+main div img{
+    max-width: 478px;
+    border-radius: 20px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 40px;
+    margin-bottom: 20px;
+}
+
+section > div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+section img{
+    max-width: 185px;
+    max-height: 185px;
+    object-fit: contain;
+}
+
+.titulo{
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 36px;
+    font-weight: 400;
+}
+#titulo1{
+    color:#A70316;
+}
+#titulo2{
+    color:#DEBDBF;
+}
+#titulo3{
+    color:#00CADC;
+}
+#titulo4{
+    color:#F3612B;
+}
+#descricao1{
+    color: #D6D6D6;
+    font-family: 'New Rocker', cursive;
+    font-size: 26px;
+}
+.descricao2{
+    color: #E9E9E9;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 16px;
+}
+
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-image: url(./Imagens/parede-de-tijolo-preto-fundo-escuro-para-design.jpg);
+    border: 4px solid #82C2FF;
+    padding: 24px 79px;
+    color:#FFF;
+    font-family: 'Arimo', sans-serif;
+    
+}
+footer div.icones{
+    display: flex;
+    gap: 10px;
+    align-self: start;
+}
+
+
+footer div img{
+    max-width: 50.75px;
+    border-radius: 10px;
+}
+
+@media (max-width:940px){
+
+    header a{
+        font-size:12px;
+    }
+
+    main h1{
+        font-size: 32px;
+    }
+
+    main div{
+        grid-template-columns: 1fr;
+    }
+
+    main div img{
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    #descricao1{
+        font-size: 16px;
+    }
+
+    section{
+        grid-template-columns: 1fr;
+    }
+
+    section div{
+        gap: 20px;
+    }
+
+    .bg{
+        padding: 0 22px;
+        background-size: cover;
+    }
+
+    footer{
+        padding: 24px 22px;
+    }
+
+    footer div.contato{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:650px){
+    section img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    footer{
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .titulo{
+        font-size: 16px;
+    }
+
+    .descricao2{
+        font-size: 14px;
+    }
+
+    footer div.contato{
+        font-size: 11px;
+    }
+
+    footer div img{
+        max-width: 30px;
+    }
+
+    @media(max-width:330px){
+        section img{
+            max-width: 110px;
+            max-height: 110px;
+        }
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+    }
+
+    .descricao2{
+        font-size: 10px;
+    }
+}
